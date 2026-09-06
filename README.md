@@ -6,20 +6,9 @@
 
 ## 新增 / 更新角色卡
 
-1. 把角色卡的 `.json`（必须）和同名 `.png` 立绘（可选）放进 `cards/` 目录
-2. 重新生成清单：
-
-   ```bash
-   node build.js
-   ```
-
-3. 提交并推送，网站会在一两分钟内自动更新：
-
-   ```bash
-   git add cards/ cards.json
-   git commit -m "新增角色卡：XXX"
-   git push
-   ```
+1.把 .json 和 .png 丢进 cards/ 文件夹
+2.双击 update.bat
+3.输入更新说明，回车
 
 ## 目录说明
 
