@@ -14,25 +14,11 @@
     "hasImage": true
   },
   {
-    "id": "hybrid宠物",
-    "name": "hybrid宠物",
-    "tags": [],
-    "summary": "",
-    "hasImage": false
-  },
-  {
     "id": "一千零一夜Keegan",
     "name": "一千零一夜Keegan",
     "tags": [],
     "summary": "<character_information character=\"Keegan\">\r\n核心身份：\r\n  名称：Keegan P. Russ\r\n  性别：男\r\n  年龄：37\r\n  标签：一千零一夜苏丹国王，贤明君主，被大臣逼婚的工作狂\r\n",
     "hasImage": true
-  },
-  {
-    "id": "付费制军营兔子",
-    "name": "付费制军营兔子",
-    "tags": [],
-    "summary": "",
-    "hasImage": false
   },
   {
     "id": "宿伞之魂",
