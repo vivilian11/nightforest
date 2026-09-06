@@ -1,0 +1,65 @@
+[
+  {
+    "id": "Alyssa",
+    "name": "Alyssa",
+    "tags": [],
+    "summary": "<character_information character=\"Alyssa\">\r\n核心身份：\r\n  名称：Alyssa·Voss\r\n  性别：女\r\n  年龄：22岁\r\n  标签：前童子兵，自由佣兵，Talon Group 特殊委托分队",
+    "hasImage": true
+  },
+  {
+    "id": "Bloodhound",
+    "name": "Bloodhound",
+    "tags": [],
+    "summary": "Name: Bloodhound (real name unknown)\r\nAge: 32\r\nGender: Biologically female; psychologically agender\r\nSexual orientation:",
+    "hasImage": true
+  },
+  {
+    "id": "hybrid宠物",
+    "name": "hybrid宠物",
+    "tags": [],
+    "summary": "",
+    "hasImage": false
+  },
+  {
+    "id": "一千零一夜Keegan",
+    "name": "一千零一夜Keegan",
+    "tags": [],
+    "summary": "<character_information character=\"Keegan\">\r\n核心身份：\r\n  名称：Keegan P. Russ\r\n  性别：男\r\n  年龄：37\r\n  标签：一千零一夜苏丹国王，贤明君主，被大臣逼婚的工作狂\r\n",
+    "hasImage": true
+  },
+  {
+    "id": "付费制军营兔子",
+    "name": "付费制军营兔子",
+    "tags": [],
+    "summary": "",
+    "hasImage": false
+  },
+  {
+    "id": "宿伞之魂",
+    "name": "宿伞之魂",
+    "tags": [],
+    "summary": "",
+    "hasImage": true
+  },
+  {
+    "id": "小红帽konig",
+    "name": "小红帽konig",
+    "tags": [],
+    "summary": "<character_information character=\"König\">\r\n核心身份：\r\n  名称：König（柯尼希）\r\n  性别：男\r\n  年龄：24\r\n  标签：铁匠之子，小镇边缘人，森林旁的巨人\r\n\r\n背景：\r\n  出身：",
+    "hasImage": true
+  },
+  {
+    "id": "灰姑娘Krueger",
+    "name": "灰姑娘Krueger",
+    "tags": [],
+    "summary": "<character_information character=\"Krueger\">\r\nCore Identity:\r\nName: Sebastian Josef Krueger (commonly referred to simply ",
+    "hasImage": true
+  },
+  {
+    "id": "白雪公主Ghost",
+    "name": "白雪公主Ghost",
+    "tags": [],
+    "summary": "<character_information character=\"Ghost\">\r\n核心身份：\r\n  名称：西蒙·莱利（Simon·Riley），军中人称\"Ghost\"\r\n  性别：男\r\n  年龄：26\r\n  标签：银霜王国王储，\"白雪王",
+    "hasImage": true
+  }
+]

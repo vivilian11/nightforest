@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nightforest · 角色卡藏馆</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="gate" class="gate">
+    <div class="gate-box">
+      <h1>Nightforest</h1>
+      <p>这里存放的角色卡包含成人向内容（暴力 / 亲密描写等），仅供 18 周岁以上人士浏览。</p>
+      <p>继续访问即代表你确认已满 18 周岁，并自愿浏览此类内容。</p>
+      <button id="gate-enter">我已成年，进入</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">🌲</span>
+      <span class="brand-name">Nightforest</span>
+      <span class="brand-sub">角色卡藏馆</span>
+    </div>
+    <div class="header-actions">
+      <input id="search" type="search" placeholder="搜索角色名 / 标签…" />
+    </div>
+  </header>
+
+  <main>
+    <section id="grid" class="grid"></section>
+    <p id="empty-hint" class="empty-hint" hidden>还没有可展示的角色卡。</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>角色卡仅供个人娱乐与创作交流使用，请勿用于商业用途或恶意传播。</p>
+  </footer>
+
+  <!-- 详情弹窗 -->
+  <div id="detail-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel detail-panel">
+      <button class="modal-close" data-close>✕</button>
+      <div class="detail-body">
+        <div class="detail-image">
+          <img id="detail-img" alt="" />
+        </div>
+        <div class="detail-info">
+          <h2 id="detail-name"></h2>
+          <div id="detail-tags" class="tag-row"></div>
+          <div class="detail-scroll">
+            <pre id="detail-desc" class="detail-desc"></pre>
+          </div>
+          <button id="detail-download" class="primary-btn">下载角色卡（.zip）</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "nightforest",
+  "version": "1.0.0",
+  "description": "角色卡展示与下载站（纯静态，托管在 GitHub Pages）",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
