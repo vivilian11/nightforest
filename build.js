@@ -12,22 +12,31 @@ function buildManifest() {
   const manifest = jsonFiles.map((jsonFile) => {
     const base = jsonFile.slice(0, -5);
     const hasImage = files.includes(base + '.png');
+    const introFile = base + '.txt';
+    const hasIntro = files.includes(introFile);
 
     let name = base;
     let tags = [];
     let summary = '';
+    let intro = '';
     try {
       const raw = fs.readFileSync(path.join(CARDS_DIR, jsonFile), 'utf-8');
       const data = JSON.parse(raw);
       name = data.name || data.data?.name || base;
       tags = data.tags || data.data?.tags || [];
-      const desc = data.description || data.data?.description || '';
-      summary = desc.slice(0, 120);
+
+      // 自定义简介（cards/<id>.txt）优先于酒馆角色卡自带的 description
+      if (hasIntro) {
+        intro = fs.readFileSync(path.join(CARDS_DIR, introFile), 'utf-8').trim();
+      } else {
+        intro = data.description || data.data?.description || '';
+      }
+      summary = intro.slice(0, 120);
     } catch (e) {
       console.error(`解析卡片失败: ${jsonFile}`, e.message);
     }
 
-    return { id: base, name, tags, summary, hasImage };
+    return { id: base, name, tags, summary, hasImage, intro: hasIntro ? intro : '' };
   });
 
   fs.writeFileSync(
