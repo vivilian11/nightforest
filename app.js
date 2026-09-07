@@ -78,12 +78,18 @@ async function openDetail(card) {
   detailImg.src = card.hasImage ? cardImagePath(card) : '';
   detailImg.style.display = card.hasImage ? 'block' : 'none';
   detailTags.innerHTML = (card.tags || []).map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join('');
-  detailDesc.textContent = '加载中…';
   detailDownload.disabled = false;
   detailDownload.textContent = '下载角色卡（.zip）';
   detailDownload.onclick = () => downloadCard(card);
   detailModal.hidden = false;
 
+  // 有自定义简介（cards/<id>.txt）就直接显示，不用再去读酒馆角色卡的 description
+  if (card.intro) {
+    detailDesc.textContent = card.intro;
+    return;
+  }
+
+  detailDesc.textContent = '加载中…';
   try {
     const res = await fetch(cardJsonPath(card), { cache: 'no-store' });
     const data = await res.json();
